@@ -32,6 +32,10 @@ def prediction():
 
     result = result[0]
     
+#     def re ():
+#         for res in result:
+#             return res
+    
 #return prediction, which is the result result.
     return render_template("rm.html", pred = "Based on the inputs : {}".format(result)) 
     
