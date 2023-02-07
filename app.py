@@ -30,7 +30,7 @@ def prediction():
 
     result = model.predict(test) #parsing it to our model for predicting
 
-#     result = (round(result[0], 2))
+    result = result[0]
     
 #return prediction, which is the result result.
     return render_template("rm.html", pred = "Based on the inputs : {}".format(result)) 
