@@ -39,7 +39,7 @@ def prediction():
     print(f"Hello, My name is {value } and I'm {value1} years old.")
     
 #return prediction, which is the result result.
-    return render_template("rm.html", pred = "The Area and Time of day to Distribute water is: {} in the {} ".format(result[0][0], result[0][1])) 
+    return render_template("rm.html", pred = "The Area and Time of day to Distribute water is: {} in the {} ".format(value, value1)) 
     
 # Run this file as the main file...
 if __name__ == "__main__": 
