@@ -36,7 +36,7 @@ def prediction():
     value = result[0]
     value1 = result[1]
     
-    print(f"Hello, My name is {value } and I'm {value1} years old.")
+#     print(f"Hello, My name is {value } and I'm {value1} years old.")
     
 #return prediction, which is the result result.
     return render_template("rm.html", pred = "The Area and Time of day to Distribute water is: {} in the {} ".format(value, value1)) 
