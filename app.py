@@ -24,20 +24,22 @@ def prediction():
     e = request.form["weather"]
 
 # Creating Out of sample instance
-    damp = {"day":q, "Price_of_water":w, "weather":e} 
+
+    damp = {"day":q, "Price_of_water":w, "weather":e}
 
     test = pd.DataFrame(damp, index = [289]) # converting the dictonary into Pandas dataframe
 
     result = model.predict(test) #parsing it to our model for predicting
 
     result = result[0]
+
+    value = result[0][0]
+    value1 = result[0][1]
     
-#     def re ():
-#         for res in result:
-#             return res
+    print(f"Hello, My name is {value } and I'm {value1} years old.")
     
 #return prediction, which is the result result.
-    return render_template("rm.html", pred = "Based on the inputs : {}".format(result)) 
+    return render_template("rm.html", pred = "The Area and Time of day to Distribute water is: {} in the {} ".format(result[0][0], result[0][1])) 
     
 # Run this file as the main file...
 if __name__ == "__main__": 
