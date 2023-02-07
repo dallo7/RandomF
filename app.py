@@ -30,10 +30,10 @@ def prediction():
 
     result = model.predict(test) #parsing it to our model for predicting
 
-    result = (round(result[0], 2))
+#     result = (round(result[0], 2))
     
 #return prediction, which is the result result.
-    return render_template("rm.html", pred = "Base on the inputs : {}".format(result)) 
+    return render_template("rm.html", pred = "Based on the inputs : {}".format(result)) 
     
 # Run this file as the main file...
 if __name__ == "__main__": 
