@@ -33,8 +33,8 @@ def prediction():
 
     result = result[0]
 
-    value = result[0][0]
-    value1 = result[0][1]
+    value = result[0]
+    value1 = result[1]
     
     print(f"Hello, My name is {value } and I'm {value1} years old.")
     
